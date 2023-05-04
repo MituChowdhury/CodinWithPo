@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Game1">
+   <center>
+      <SplitPane dividerPositions="0.4766042780748662" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="699.0" prefWidth="482.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="-47.0" prefHeight="152.0" prefWidth="350.0" text="WITH PO" textAlignment="CENTER" textFill="#ffe605">
+                     <font>
+                        <Font name="Tahoma Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="-47.0" prefHeight="152.0" prefWidth="186.0" text="CODIN" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="81.0" text="Mission :" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="Tahoma Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="78.0" prefHeight="284.0" prefWidth="378.0" text="To evacuate the city and help the citizens, Po has arranged N boats. Each boat has its own velocity. As the river is not very broad, all of the boats will be going linearly in a single line and cannot stop in middle of their way. Hence sometimes a fast boat may collide with a slower boat. Po needs to ensure there is no collision. Can you help Po finding a proper launching order for the boats so that the boats don't collide with one another in their path?" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="332.0" prefHeight="29.0" prefWidth="130.0" text="Sample Input:" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="463.0" prefHeight="78.0" prefWidth="181.0" text="Input File : input1.txt Output File : output1.txt" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="502.0" prefHeight="78.0" prefWidth="286.0" text="* save source code as &quot;code.cpp&quot; *" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="242.0" layoutY="381.0" prefHeight="30.0" prefWidth="176.0" text="3 2 1   &gt; indices of boats" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="20.0" layoutY="611.0" onAction="#switchToPage2" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #ffe605;" stylesheets="@application/application.css" text="BACK">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="296.0" layoutY="609.0" onAction="#save" prefHeight="52.0" prefWidth="113.0" style="-fx-background-color: #ffe605;" stylesheets="@application/application.css" text="SUBMIT">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="20.0" layoutY="362.0" prefHeight="50.0" prefWidth="151.0" text="2          &gt; testcase      3          &gt; no of boats" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="425.0" prefHeight="30.0" prefWidth="157.0" text="4" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="403.0" prefHeight="30.0" prefWidth="157.0" text="4 5 6    &gt; velocities " textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="242.0" layoutY="335.0" prefHeight="29.0" prefWidth="130.0" text="Sample Output:" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="430.0" prefHeight="65.0" prefWidth="78.0" text="5 19 7 5" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="242.0" layoutY="425.0" prefHeight="30.0" prefWidth="176.0" text="2 3 1 4" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="201.0" layoutY="314.0" prefHeight="178.0" prefWidth="16.0" text="|   |   |   |   |   |   |   |" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="68.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LOGO.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: BLACK;">
+               <children>
+                  <Label alignment="CENTER" layoutY="-2.0" prefHeight="26.0" prefWidth="468.0" style="-fx-background-color: #ffe605;" text="EDITOR">
+                     <font>
+                        <Font name="Tahoma Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textArea" layoutY="24.0" prefHeight="676.0" prefWidth="470.0" text="#include&lt;bits/stdc++.h&gt;&#10;using namespace std;&#10;&#10;int main()&#10;{&#10;    freopen(&quot;input1.txt&quot;,&quot;r&quot;,stdin);&#10;    freopen(&quot;output1.txt&quot;,&quot;w&quot;,stdout);&#10;    &#10;    /// write your code here&#10;&#10;    return 0;&#10;} ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>

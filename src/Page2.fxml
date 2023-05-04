@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <Pane layoutX="99.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="803.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="-30.0" prefHeight="152.0" prefWidth="233.0" text="CODIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="41.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="163.0" layoutY="-30.0" prefHeight="152.0" prefWidth="350.0" text="WITH PO" textAlignment="CENTER" textFill="#ffe605">
+               <font>
+                  <Font name="Tahoma Bold" size="41.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="130.0" prefHeight="74.0" prefWidth="181.0" style="-fx-background-color: black;" text="Challenge 1:   Po And Boats" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="327.0" prefHeight="74.0" prefWidth="181.0" style="-fx-background-color: black;" text="Challenge 2:   Po And Cities" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="529.0" prefHeight="74.0" prefWidth="181.0" style="-fx-background-color: black;" text="Challenge 3:  Po And Spells" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="212.0" prefHeight="17.0" prefWidth="181.0" text="Topic : Sorting" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="408.0" prefHeight="17.0" prefWidth="181.0" text="Topic : Graph" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="614.0" prefHeight="25.0" prefWidth="233.0" text="Topic : Dynamic Programming" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="237.0" prefHeight="17.0" prefWidth="181.0" text="Difficulty : Easy" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="433.0" prefHeight="17.0" prefWidth="181.0" text="Difficulty : Medium" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="639.0" prefHeight="17.0" prefWidth="181.0" text="Difficulty : Hard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="68.0" layoutX="21.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LOGO.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="465.0" layoutY="109.0" onAction="#playGame1" prefHeight="161.0" prefWidth="278.0" style="-fx-background-color: #ffe605;" text="SOLVE NOW" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="271.0" onDragDetected="#playGame1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@game2.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="465.0" layoutY="306.0" onAction="#playGame2" prefHeight="161.0" prefWidth="278.0" style="-fx-background-color: #ffe605;" text="SOLVE NOW" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="271.0" onDragDetected="#playGame2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@game1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="465.0" layoutY="502.0" onAction="#playGame3" prefHeight="161.0" prefWidth="278.0" style="-fx-background-color: #ffe605;" text="SOLVE NOW" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="271.0" onDragDetected="#playGame3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@game3.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane prefHeight="700.0" prefWidth="99.0" style="-fx-background-color: #ffe605;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="5.0" layoutY="4.0" onAction="#switchToPage1" prefHeight="692.0" prefWidth="89.0" style="-fx-background-color: #ffe605;" text="BACK">
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Game3">
+   <center>
+      <SplitPane dividerPositions="0.4766042780748662" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="699.0" prefWidth="482.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="-47.0" prefHeight="152.0" prefWidth="350.0" text="WITH PO" textAlignment="CENTER" textFill="#ffe605">
+                     <font>
+                        <Font name="Tahoma Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="-47.0" prefHeight="152.0" prefWidth="186.0" text="CODIN" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="81.0" text="Mission :" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="Tahoma Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="78.0" prefHeight="284.0" prefWidth="378.0" text="Po is in Shen's city. In order to defeat Shen, he needs special spells. These spells are contained in dragon scrolls. Po has X amount of strength and can open these scrolls using his strength. Each scroll requires a specific amount of strength to open and contains a special spell causing a specific amount of damage to Shen. If Po can unlock scrolls which in total cause maximum damage, he will be able to defeat Shen. Can you help Po determine the maximum damage he can do to Shen and which scrolls should he unlock for this purpose?" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="332.0" prefHeight="29.0" prefWidth="130.0" text="Sample Input:" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="463.0" prefHeight="78.0" prefWidth="181.0" text="Input File : input3.txt Output File : output3.txt" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="502.0" prefHeight="78.0" prefWidth="286.0" text="* save source code as &quot;code.cpp&quot; *" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="380.0" prefHeight="30.0" prefWidth="186.0" text="140   &gt; maximum" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="20.0" layoutY="611.0" onAction="#switchToPage2" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #ffe605;" stylesheets="@application/application.css" text="BACK">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="296.0" layoutY="609.0" onAction="#save" prefHeight="52.0" prefWidth="113.0" style="-fx-background-color: #ffe605;" stylesheets="@application/application.css" text="SUBMIT">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="20.0" layoutY="362.0" prefHeight="50.0" prefWidth="192.0" text="1                   &gt; testcase       3 15              &gt; no of scrolls" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="416.0" prefHeight="42.0" prefWidth="238.0" text="5 15 10         &gt; unlocking strength" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="332.0" prefHeight="29.0" prefWidth="130.0" text="Sample Output:" textFill="#ffe605" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="427.0" prefHeight="66.0" prefWidth="230.0" text="100 105 40   &gt; damage amount" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="284.0" layoutY="445.0" prefHeight="30.0" prefWidth="176.0" text="1 3   &gt; indices of" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="387.0" prefHeight="50.0" prefWidth="192.0" text="&amp; Po's strength" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="323.0" layoutY="386.0" prefHeight="50.0" prefWidth="192.0" text="damage" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="263.0" layoutY="321.0" prefHeight="178.0" prefWidth="16.0" text="|   |   |   |   |   |   |   |   |" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="323.0" layoutY="452.0" prefHeight="50.0" prefWidth="192.0" text="scrolls" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="284.0" layoutY="411.0" prefHeight="50.0" prefWidth="192.0" text="2      &gt; no of scrolls" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="68.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LOGO.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: BLACK;">
+               <children>
+                  <Label alignment="CENTER" layoutY="-2.0" prefHeight="26.0" prefWidth="468.0" style="-fx-background-color: #ffe605;" text="EDITOR">
+                     <font>
+                        <Font name="Tahoma Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textArea" layoutY="24.0" prefHeight="676.0" prefWidth="470.0" text="#include&lt;bits/stdc++.h&gt;&#10;using namespace std;&#10;&#10;int main()&#10;{&#10;    freopen(&quot;input3.txt&quot;,&quot;r&quot;,stdin);&#10;    freopen(&quot;output3.txt&quot;,&quot;w&quot;,stdout);&#10;    &#10;    /// write your code here&#10;&#10;    return 0;&#10;}">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>
